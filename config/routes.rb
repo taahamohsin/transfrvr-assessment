@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   root to: 'home#index'
-  resources :users do
+  resources :users, only: [:index, :show] do
     get 'simulations', to: 'users#simulations'
   end
-  resources :simulations
-  resources :clients do
+  resources :simulations, only: [:index, :show]
+  resources :clients, only: [:index, :show] do
     member do
       post 'simulations', to: 'clients#assign_simulations'
     end
