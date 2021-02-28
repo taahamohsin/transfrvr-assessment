@@ -10,4 +10,4 @@ After you're done with the above, please run `bundle install` or just `bundle` t
 ## Running the app
 To run the rails app, run `bundle exec rails s` and to run the webpack dev server that serves the react app, please run `./bin/webpack-dev-server` from the project root. Then navigate to `http://localhost:3000` on your browser and enjoy the app.
 
-Note: This is a bare bones implementation and not designed with deployment in mind at the moment.
+Note: This is a bare bones implementation that only addresses the functionality requested in the task description and is not designed with deployment in mind at the moment.
