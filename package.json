@@ -1,0 +1,15 @@
+{
+  "name": "transfrvr-assessment",
+  "private": true,
+  "dependencies": {
+    "@babel/preset-react": "^7.12.13",
+    "@rails/webpacker": "5.2.1",
+    "antd": "^4.12.3",
+    "react": "^16.8",
+    "react-dom": "^16.8",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.2"
+  }
+}
