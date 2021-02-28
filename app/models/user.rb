@@ -33,7 +33,7 @@ class User < ApplicationRecord
 
     def get_allowed_simulations(user_id)
       user = User.find(user_id)
-      user.client.simulations.map { |simulation| Simulation.new(simulation) }
+      user.client.simulations.map { |simulation| Simulation.new(simulation.attributes.symbolize_keys) }
     end
   end
 end

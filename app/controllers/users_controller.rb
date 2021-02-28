@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     sanitized_params = user_where_params
     users = User.find_all(sanitized_params)
 
-    render json: users
+    render json: users, root: 'trainees'
   end
 
   # GET /users/1 or /users/1.json
@@ -13,15 +13,6 @@ class UsersController < ApplicationController
     user = User.retrieve_by_id(params[:id])
 
     render json: user
-  end
-
-  # GET /users/new
-  def new
-    @user = User.new
-  end
-
-  # GET /users/1/edit
-  def edit
   end
 
   def simulations

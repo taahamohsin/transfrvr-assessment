@@ -5,9 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-first_client = Client.create!(name: 'First Client', code: 'FC')
-second_client = Client.create!(name: 'Second Client', code: 'SC')
-third_client = Client.create!(name: 'Third Client', code: 'TC')
+first_client = Client.create(name: 'First Client', code: 'FC')
+second_client = Client.create(name: 'Second Client', code: 'SC')
+third_client = Client.create(name: 'Third Client', code: 'TC')
 
 first_simulation = Simulation.create!(name: 'First Simulation')
 second_simulation = Simulation.create!(name: 'Second Simulation')

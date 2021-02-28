@@ -1,11 +1,10 @@
 class Simulation < ApplicationRecord
-  attr_accessor :simulation_id, :name
+  attr_accessor :simulation_id
   has_and_belongs_to_many :clients
 
   def initialize(attributes)
     super(attributes)
     @simulation_id = attributes[:id]
-    @name = attributes[:name]
   end
 
   class << self

@@ -1,5 +1,4 @@
 class Client < ApplicationRecord
-  attr_accessor :id, :code, :name
   has_and_belongs_to_many :simulations
 
   class << self
